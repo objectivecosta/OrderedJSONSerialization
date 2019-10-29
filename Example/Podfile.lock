@@ -1,0 +1,16 @@
+PODS:
+  - OrderedJSONSerialization (0.1.0)
+
+DEPENDENCIES:
+  - OrderedJSONSerialization (from `../`)
+
+EXTERNAL SOURCES:
+  OrderedJSONSerialization:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  OrderedJSONSerialization: dc3c0beebc0e985d5181681030adcb0b9c401386
+
+PODFILE CHECKSUM: c6396a50fdf740ec0679868420f4f906683b0fcb
+
+COCOAPODS: 1.8.4

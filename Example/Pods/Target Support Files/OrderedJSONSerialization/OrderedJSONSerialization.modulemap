@@ -1,0 +1,6 @@
+framework module OrderedJSONSerialization {
+  umbrella header "OrderedJSONSerialization-umbrella.h"
+
+  export *
+  module * { export * }
+}
