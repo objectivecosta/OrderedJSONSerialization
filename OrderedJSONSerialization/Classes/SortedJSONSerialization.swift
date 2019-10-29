@@ -9,7 +9,7 @@ import Foundation
 
 public class SortedJSONSerialization {
     
-    class func data(withJSONObject value: Any?) throws -> Data {
+    public class func data(withJSONObject value: Any?) throws -> Data {
         var jsonStr = [UInt8]()
         
         var writer = JSONWriter(writer: { (str: String?) in
