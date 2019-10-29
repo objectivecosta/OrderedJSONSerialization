@@ -1,0 +1,6 @@
+use_frameworks!
+target 'OrderedJSONSerialization_Tests' do
+  pod 'OrderedJSONSerialization', :path => '../'
+  
+  
+end
