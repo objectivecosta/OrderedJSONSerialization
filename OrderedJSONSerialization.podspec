@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OrderedJSONSerialization'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of OrderedJSONSerialization.'
+  s.version          = '1.0.0'
+  s.summary          = 'For some reason, neither Apple, nor any other JSON serialization library for Swift supports ordered JSON. This fixes it.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,21 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  For some reason, neither Apple, nor any other JSON serialization library for Swift supports ordered JSON. This fixes it.
+  Even though the JSON RFC specifies that the order is not important for JSON documents, in some cases, ordering is desired.
+  With Swift's native .sortedKeys WritingOption, this is partially supported, but only on the top-level of the document.
+  Given Dictionary's unsorted fashion of storing items, when using JSON documents as queries, this randomness preventsa caching
+  on a CDN. For this case, there's OrderedJSONSerialization.
                        DESC
 
-  s.homepage         = 'https://github.com/Rafael Costa/OrderedJSONSerialization'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/rafaelc0sta/OrderedJSONSerialization'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Rafael Costa' => 'rafael@rafaelcosta.me' }
-  s.source           = { :git => 'https://github.com/Rafael Costa/OrderedJSONSerialization.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'git@github.com:rafaelc0sta/OrderedJSONSerialization.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/merafaelcosta'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'OrderedJSONSerialization/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'OrderedJSONSerialization' => ['OrderedJSONSerialization/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
