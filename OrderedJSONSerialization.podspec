@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'OrderedJSONSerialization'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'For some reason, neither Apple, nor any other JSON serialization library for Swift supports ordered JSON. This fixes it.'
 
 # This description is used to generate tags and improve search results.
