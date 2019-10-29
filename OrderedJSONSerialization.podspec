@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/rafaelc0sta/OrderedJSONSerialization'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Rafael Costa' => 'rafael@rafaelcosta.me' }
-  s.source           = { :git => 'git@github.com:rafaelc0sta/OrderedJSONSerialization.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/rafaelc0sta/OrderedJSONSerialization.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/merafaelcosta'
 
   s.ios.deployment_target = '9.0'
