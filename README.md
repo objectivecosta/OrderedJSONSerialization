@@ -21,7 +21,7 @@ pod 'OrderedJSONSerialization'
 
 ## Author
 
-Rafael Costa, rafael@rafaelcosta.me
+@ObjectiveCosta
 
 ## License
 
